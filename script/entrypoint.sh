@@ -78,4 +78,4 @@ mv -v /etc/nginx/stream.d /etc/nginx/stream.d.disabled
  done
 ) &
 
-exec nginx -g "daemon off;"
+exec /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf

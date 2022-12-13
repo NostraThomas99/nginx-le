@@ -1,6 +1,7 @@
 FROM nginx:1.20-alpine
 
 ADD conf/nginx.conf /etc/nginx/nginx.conf
+ADD conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 ADD script/entrypoint.sh /entrypoint.sh
 ADD script/le.sh /le.sh
